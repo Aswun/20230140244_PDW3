@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card">
+        <img src= "joke.png" alt= "Foto Profil">
+        <h3>Aswin Lutfian Prasetyo</h3>
+        <p> ini adalah tugas Pengembangan Desain Web pertemuan ke-3</p>
+        <button class = "btn" onclick= "showPopup()">Lihat Detail</button>
+    </div>
+
+    <div class = "popup" id = "popup">
+        <span class = "close" onclick= "hidePopup()">&times;</span>
+        <h2>Detail Pengguna</h2>
+        <p>nim pengguna adalah 20230140244</p>
+    </div>
+
+    <script>
+        function showPopup() {
+            document.getElementById("popup").style.display = "block";
+        }
+        function hidePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+</body>
+</html>
